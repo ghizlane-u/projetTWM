@@ -1,6 +1,6 @@
 nav {
     position: relative;
-    background-color: #e8b377; /* Une couleur douce et agréable */
+    background-color: #cc925e; /* Une couleur douce et agréable */
     padding: 10px 20px; 
     display: flex;
     justify-content: space-evenly;
@@ -10,7 +10,7 @@ nav {
   nav a {
     position: relative;
     text-decoration: none;
-    color: #555; /* Couleur de texte neutre */
+    color: rgb(161, 85, 18); /* Couleur de texte neutre */
     font-size: 18px;
     font-weight: 500;
     padding: 10px 20px;
@@ -19,7 +19,7 @@ nav {
   }
   
   nav a:hover {
-    color: #fff; /* Couleur blanche au survol */
+    color: rgb(66, 94, 64); /* Couleur blanche au survol */
     transform: translateY(-5px); /* Effet léger de survol */
   }
   
@@ -29,7 +29,7 @@ nav {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #ff6f61; /* Couleur d'accent pour la barre de survol */
+    background-color: #cc925e; /* Couleur d'accent pour la barre de survol */
     border-radius: 2px;
     transition: left 0.3s ease;
   }
