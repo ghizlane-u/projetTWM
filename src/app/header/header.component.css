@@ -1,0 +1,58 @@
+nav {
+    position: relative;
+    background-color: #e8b377; /* Une couleur douce et agréable */
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #555; /* Couleur de texte neutre */
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: color 0.3s, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #fff; /* Couleur blanche au survol */
+    transform: translateY(-5px); /* Effet léger de survol */
+  }
+  
+  nav a span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6f61; /* Couleur d'accent pour la barre de survol */
+    border-radius: 2px;
+    transition: left 0.3s ease;
+  }
+  
+  /* Positionner chaque barre de survol selon l'index */
+  nav a:nth-child(1):hover span { left: 0px; }
+  nav a:nth-child(2):hover span { left: 90px; }
+  nav a:nth-child(3):hover span { left: 180px; }
+  nav a:nth-child(4):hover span { left: 275px; }
+  nav a:nth-child(5):hover span { left: 380px; }
+  .search .search-input {
+    background-color: rgb(203, 135, 51); /* Couleur de fond personnalisée */
+    border: none; /* Supprime les bordures par défaut */
+    color: rgb(20, 19, 19); /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    padding: 15px;
+    height: 40px;
+    width: 40px; /* Largeur initiale */
+    transition: width 0.8s ease, background-color 0.3s ease; /* Transition fluide */
+    border-radius: 25px; /* Arrondir les bords */
+}
+
+.search .search-input:focus {
+    width: 200px; /* Largeur au survol */
+    background-color: rgb(161, 85, 18); /* Changement de couleur au focus */
+}
