@@ -1,6 +1,8 @@
-import { Routes } from '@angular/router';
-import { SigninComponent } from './signin/signin.component';
+import { RouterModule,Routes } from '@angular/router';
+import { HomeComponent } from './home-page/home-page.component';
 
 export const routes: Routes = [
-  { path: 'signin', component: SigninComponent }
+  
+  { path: '', component: HomeComponent },
+  { path: '**', redirectTo: '' }
 ];

@@ -1,12 +1,37 @@
-    <div class="bg-gray-100 min-h-screen py-32 px-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl:grid-cols-4 gap-y-10 gap-x-6"> 
-      <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300" *ngFor="let item of galleryItems">
-        <img [src]="item.image" alt="Image" class="rounded-t-lg w-full">
-        <div class="p-6">
-          <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200 font-bold text-gray-900">{{ item.title }}</h1>
-          <p class="text-gray-700 my-2">{{ item.description }}</p>
+
+
+<div class="favoris-client">
+  <h2>Favoris <br> des Clients</h2>
+  <div class="produits">
+    <div class="product-card" *ngFor="let product of products; let i = index">
+      <!-- Sticker "New" pour le 1er et le 3ème produit -->
+      <div class="sticker" *ngIf="i === 0 || i === 2">New</div>
+
+      <!-- Image du produit avec description en superposition -->
+      <div class="image-container" 
+           (mouseenter)="product.showDescription = true" 
+           (mouseleave)="product.showDescription = false">
+        <img [src]="product.image" [alt]="product.name" />
+        <div class="description-overlay" *ngIf="product.showDescription">
+          {{ product.description }}
+        </div>
+      </div>
+
+      <!-- Nom du produit -->
+      <h3>{{ product.name }}</h3>
+
+      <!-- Prix, étoiles et possibilité de sélection -->
+      <div class="price-info">
+        <p class="price">{{ product.price }}</p>
+        <!-- Étoiles d'avis -->
+        <div class="rating">
+          <span *ngFor="let star of stars; let starIndex = index" 
+                [class.filled]="starIndex < product.rating" 
+                (click)="rateProduct(product, starIndex + 1)">
+            ★
+          </span>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
