@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common'; // Nécessaire pour *ngFor et *n
   styleUrls: ['./product-card.component.css'], // ou .scss si nécessaire
   imports: [CommonModule],
 })
-export class ProductCardComponent {
+export class ProductCardaComponent {
   products = [
     {
       id: 1,
