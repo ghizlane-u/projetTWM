@@ -1,0 +1,48 @@
+/* about.component.css */
+
+/* Variables de couleurs personnalisées */
+:root {
+    --caramel: #C97A4D;
+    --vert-amande: #A9D79D;
+    --noir: #121212;
+    --blanc: #ffffff;
+}
+
+/* Personnalisation des couleurs */
+body {
+    background-color: var(--noir);
+    color: var(--blanc);
+}
+
+/* Header et Footer */
+header, footer {
+    background-color: var(--caramel);
+    color: var(--noir);
+}
+
+/* Section "Notre histoire" */
+h2 {
+    color: var(--caramel);
+}
+
+h1, .page-title {
+    color: var(--caramel);
+}
+
+h2 {
+    color: var(--vert-amande);
+}
+
+.product-card {
+    background-color: var(--caramel);
+    color: var(--noir);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: var(--noir);
+}
