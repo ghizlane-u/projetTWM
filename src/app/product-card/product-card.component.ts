@@ -19,7 +19,7 @@ export class ProductCardComponent {
       downloads: '34k Downloads',
       rating: 5,
       reviews: 45,
-      image: 'https://images.unsplash.com/photo-1627384113858-ce93ff568d1f?auto=format&fit=crop&w=1170&q=80',
+      image: 'https://i.pinimg.com/474x/2c/0d/e5/2c0de5ab3446c2fcfdf1e8ec7231ee14.jpg',
     },
     // // Ajoutez plus de produits ici si nécessaire
     // {
