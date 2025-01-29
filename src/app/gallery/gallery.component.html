@@ -1,4 +1,26 @@
-
+// gallery.component.html
+<div class="landing-page">
+  <div class="content">
+    <h2>The Best <span>ROOM</span> For You</h2>
+    <p>Venez savourer une expérience gourmande dans notre café-restaurant où se mêlent saveurs raffinées et ambiance chaleureuse. Que vous soyez amateur de café, de boissons fraîches ou de délicieuses pâtisseries, ROOM 21 est l'endroit idéal pour une pause bien méritée, entre amis ou lors de vos moments de détente. Découvrez notre menu varié, conçu pour satisfaire toutes vos envies !</p>
+  </div>
+  <div class="slideshow-container">
+    <div class="left-slideshow">
+      <div class="slide" *ngFor="let image of leftImages; let i = index" [class.active]="i === currentLeftSlide">
+        <img [src]="image" alt="Left Image" />
+      </div>
+    </div>
+    <div class="right-slideshow">
+      <div class="slide" *ngFor="let image of rightImages; let i = index" [class.active]="i === currentRightSlide">
+        <img [src]="image" alt="Right Image" />
+      </div>
+    </div>
+  </div>
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo" class="logo-img" />
+  </div>
+</div>
+ 
 
 <div class="favoris-client">
   <h2>Favoris <br> des Clients</h2>

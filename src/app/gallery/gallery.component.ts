@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-gallery',
@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true ,
   imports: [CommonModule] 
 })
-export class GalleryComponent {
+export class GalleryComponent implements OnInit  {
   stars = [1, 2, 3, 4, 5]; // Définir les étoiles (1 à 5)
   products = [
     {
@@ -76,9 +76,46 @@ export class GalleryComponent {
       rating: 0
     }
   ];
-  rateProduct(product: any, rating: number): void {
-    product.rating = rating; // Met à jour la note du produit
+  leftImages: string[] = [
+    'left1.jpeg',
+    'left2.jpeg',
+    'left3.jpeg',
+    'left4.jpeg'
+  ];
+  rightImages: string[] = [
+    'right1.jpeg',
+    'right2.jpeg',
+    'right3.jpeg',
+    'right4.jpeg'
+  ];
+
+  currentLeftSlide = 0;
+  currentRightSlide = 0;
+  leftInterval: any;
+  rightInterval: any;
+
+  ngOnInit(): void {
+    // Changement des images gauche
+    this.leftInterval = setInterval(() => {
+      this.currentLeftSlide = (this.currentLeftSlide + 1) % this.leftImages.length;
+    }, 3000);
+
+    // Changement des images droite (décalé pour varier)
+    this.rightInterval = setInterval(() => {
+      this.currentRightSlide = (this.currentRightSlide + 1) % this.rightImages.length;
+    }, 3500);
   }
+
+  ngOnDestroy(): void {
+    // Nettoyage des intervalles pour éviter les fuites mémoire
+    clearInterval(this.leftInterval);
+    clearInterval(this.rightInterval);
+  }
+
+  rateProduct(product: any, rating: number): void {
+    product.rating = rating;
+  }
+
 
 }
 
