@@ -1,0 +1,42 @@
+<div class="bg-[#cc925e]">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <h2 class="sr-only">Produits</h2>
+  
+      <div *ngFor="let category of categories">
+        <!-- Titre de la catégorie -->
+        <h2 class="text-2xl font-bold text-[#26360c] my-4">{{ category.title }}</h2>
+  
+        <!-- Produits de la catégorie -->
+        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <div *ngFor="let product of category.products" class="group relative">
+            <a href="#" class="block">
+              <img [src]="product.image" [alt]="product.name"
+                class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
+            </a>
+  
+            <!-- Nom et prix du produit restent visibles -->
+            <h3 class="mt-2 text-sm text-[#26360c]">{{ product.name }}</h3>
+            <p class="mt-1 text-lg font-medium text-gray-900">{{ product.price }} Dhs</p>
+  
+            <!-- Description affichée au survol -->
+            <div class="description">
+              <p class="text-sm text-[#26360c] text-center">
+                {{ product.description }}
+              </p>
+            </div>
+  
+            <!-- Système de notation -->
+            <div class="rating flex">
+              <span *ngFor="let star of stars; let starIndex = index" 
+                    class="cursor-pointer text-gray-400 text-xl"
+                    [class.text-yellow-500]="starIndex < product.rating"
+                    (click)="rateProduct(product, starIndex + 1)">
+                ★
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
