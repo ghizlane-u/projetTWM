@@ -4,7 +4,6 @@ import { ContactComponent } from './contact/contact.component';
 import { ColddrinksComponent } from './colddrinks/colddrinks.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutComponent } from './about/about.component';
-import { AppComponent } from './app.component';
 
 
 export const routes: Routes = [

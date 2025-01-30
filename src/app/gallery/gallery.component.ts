@@ -93,19 +93,32 @@ export class GalleryComponent implements OnInit  {
   currentRightSlide = 0;
   leftInterval: any;
   rightInterval: any;
+  isIntervalRunning: boolean = false; // Déclarez la variable ici
 
   ngOnInit(): void {
-    // Changement des images gauche
-    this.leftInterval = setInterval(() => {
-      this.currentLeftSlide = (this.currentLeftSlide + 1) % this.leftImages.length;
-    }, 3000);
-
-    // Changement des images droite (décalé pour varier)
-    this.rightInterval = setInterval(() => {
-      this.currentRightSlide = (this.currentRightSlide + 1) % this.rightImages.length;
-    }, 3500);
+    console.log("GalleryComponent ngOnInit called");
+  
+    // Désactivez les intervalles pour tester si c'est la cause du problème
+    // Temporarily commenting out intervals to check if they are causing the issue
+    if (!this.isIntervalRunning) {
+      this.isIntervalRunning = true;
+  
+      console.log("Starting intervals...");
+  
+      // Changement des images gauche
+      // this.leftInterval = setInterval(() => {
+      //   this.currentLeftSlide = (this.currentLeftSlide + 1) % this.leftImages.length;
+      //   console.log("Current Left Slide:", this.currentLeftSlide);
+      // }, 5000);
+  
+      // Changement des images droite
+      // this.rightInterval = setInterval(() => {
+      //   this.currentRightSlide = (this.currentRightSlide + 1) % this.rightImages.length;
+      //   console.log("Current Right Slide:", this.currentRightSlide);
+      // }, 5500);
+    }
   }
-
+  
   ngOnDestroy(): void {
     // Nettoyage des intervalles pour éviter les fuites mémoire
     clearInterval(this.leftInterval);

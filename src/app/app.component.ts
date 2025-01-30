@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet,RouterModule } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { ColddrinksComponent } from './colddrinks/colddrinks.component';
@@ -13,7 +13,7 @@ import { HeaderComponent } from './header/header.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,  // Marquez ce composant comme autonome
-  imports: [RouterModule,RouterOutlet, RouterLink, HeaderComponent, GalleryComponent,  CommonModule,ContactComponent,ColddrinksComponent]
+  imports: [RouterOutlet, RouterLink, HeaderComponent, GalleryComponent,CommonModule]
 })
 export class AppComponent {
   title = 'angular-app';
