@@ -1,0 +1,21 @@
+p {
+    color: #4d573e;
+  }
+img{
+    border: 3px solid white;
+}
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  
+  .rating span {
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .rating .filled {
+    color: #ffa500; /* Couleur des étoiles sélectionnées */
+  }

@@ -6,12 +6,12 @@
   </div>
   <div class="slideshow-container">
     <div class="left-slideshow">
-      <div class="slide" *ngFor="let image of leftImages; let i = index" [class.active]="i === currentLeftSlide">
+      <div class="slide" *ngFor="let image of leftImages; let i = index" >
         <img [src]="image" alt="Left Image" />
       </div>
     </div>
     <div class="right-slideshow">
-      <div class="slide" *ngFor="let image of rightImages; let i = index" [class.active]="i === currentRightSlide">
+      <div class="slide" *ngFor="let image of rightImages; let i = index">
         <img [src]="image" alt="Right Image" />
       </div>
     </div>
@@ -20,6 +20,8 @@
     <img src="logo.jpg" alt="Logo" class="logo-img" />
   </div>
 </div>
+
+
  
 
 <div class="favoris-client">

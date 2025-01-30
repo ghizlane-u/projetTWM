@@ -1,3 +1,4 @@
+
 .landing-page {
   display: flex;
   flex-direction: column;
@@ -39,6 +40,14 @@
   height: 200px;
   overflow: hidden;
 }
+.left-slideshow .slide img, 
+.right-slideshow .slide img {
+  width: 300px; 
+  height: 200px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid white; 
+}
 
 .slide {
   position: absolute;
@@ -50,6 +59,62 @@
 
 .active {
   opacity: 1;
+}
+
+/* Animation de chaque paire (gauche et droite) */
+@keyframes switch {
+  0% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.left-slideshow .slide:nth-child(1) {
+  animation: switch 32s infinite;
+  animation-delay: 0s;
+}
+
+.left-slideshow .slide:nth-child(2) {
+  animation: switch 32s infinite;
+  animation-delay: 8s;
+}
+
+.left-slideshow .slide:nth-child(3) {
+  animation: switch 32s infinite;
+  animation-delay: 16s;
+}
+
+.left-slideshow .slide:nth-child(4) {
+  animation: switch 32s infinite;
+  animation-delay: 24s;
+}
+
+.right-slideshow .slide:nth-child(1) {
+  animation: switch 32s infinite;
+  animation-delay: 0s;
+}
+
+.right-slideshow .slide:nth-child(2) {
+  animation: switch 32s infinite;
+  animation-delay: 8s;
+}
+
+.right-slideshow .slide:nth-child(3) {
+  animation: switch 32s infinite;
+  animation-delay: 16s;
+}
+
+.right-slideshow .slide:nth-child(4) {
+  animation: switch 32s infinite;
+  animation-delay: 24s;
 }
 
 .logo {
@@ -64,9 +129,6 @@
   height: 60px;
   object-fit: contain;
 }
-
-
-
 
 
 /* Conteneur principal */
@@ -94,7 +156,7 @@
 
 /* Carte produit */
 .product-card {
-  background-color: #26360c;
+  background-color: #123026;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
