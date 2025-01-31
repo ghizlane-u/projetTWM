@@ -1,11 +1,18 @@
 
+
+
+
+
+import { HotdrinksComponent } from './hotdrinks/hotdrinks.component';
+import { GlaceComponent } from './glace/glace.component';
 import { Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { ColddrinksComponent } from './colddrinks/colddrinks.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutComponent } from './about/about.component';
-import { HotdrinksComponent } from './hotdrinks/hotdrinks.component';
-import { GlaceComponent } from './glace/glace.component';
+import { PopupComponent } from './popup/popup.component';
+
+
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirige vers 'home' au chargement
@@ -15,5 +22,6 @@ export const routes: Routes = [
   { path: 'cold', component: ColddrinksComponent },
   { path: 'hot' , component: HotdrinksComponent},
   { path: 'glace', component: GlaceComponent },
+  { path: 'popup', component: PopupComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' } // Redirige les routes inconnues
 ];
