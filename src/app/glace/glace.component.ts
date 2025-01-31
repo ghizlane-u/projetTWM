@@ -50,4 +50,5 @@ export class GlaceComponent {
   rateProduct(product: any, rating: number): void {
     product.rating = rating; // Met à jour la note du produit
   }
+
 }
