@@ -147,6 +147,7 @@
     color: #be7c42;
     font-size: 1.2rem;
     text-decoration: none;
+<<<<<<< HEAD
   }
   
   .contact-links a:hover {
@@ -160,3 +161,35 @@
     }
   }
   
+=======
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive : inversion des sections sauf Contact */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section img, .section-contact img {
+        width: 100%;
+        max-width: 100%; /* Prendre toute la largeur disponible */
+        height: auto; /* Ajuster la hauteur automatiquement */
+        object-fit: contain; /* Toujours contenir l'image sans la couper */
+    }
+
+    .section div, .section-contact div {
+        width: 100%;
+    }
+
+    /* Contact reste fixe avec image au-dessus */
+    .section-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+>>>>>>> c71715bb9fe1638fcdf35a5936b80aa87b7e265b

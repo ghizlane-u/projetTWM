@@ -2,6 +2,7 @@ p {
     color: #4d573e;
     font-family: Playwrite inherit;
   }
+<<<<<<< HEAD
   h3 {
   font-size: 1.2em;
   font-family: Playwrite inherit;
@@ -24,3 +25,8 @@ p {
     color: gold; /* Couleur au survol */
   }
     
+=======
+  img{
+    border: 3px solid white;
+}
+>>>>>>> c71715bb9fe1638fcdf35a5936b80aa87b7e265b

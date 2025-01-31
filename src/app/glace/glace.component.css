@@ -1,0 +1,49 @@
+p {
+    color: #4d573e;
+  }
+img{
+    border: 3px solid white;
+}
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  
+  .rating span {
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .rating .filled {
+    color: #ffa500; /* Couleur des étoiles sélectionnées */
+  }
+  .group {
+    position: relative;
+  }
+  
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #f5e1c0; /* Crème/caramel clair */
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .group:hover .description {
+    opacity: 1; /* Affiche la description au survol */
+  }
+  
+  .group:hover .description p {
+    background-color: #f5e1c0; /* Applique l'arrière-plan crème uniquement au texte de la description */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  

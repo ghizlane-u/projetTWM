@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-gallery',
@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true ,
   imports: [CommonModule] 
 })
-export class GalleryComponent implements OnInit  {
+export class GalleryComponent  {
   stars = [1, 2, 3, 4, 5]; // Définir les étoiles (1 à 5)
   products = [
     {
@@ -89,41 +89,7 @@ export class GalleryComponent implements OnInit  {
     'right4.jpeg'
   ];
 
-  currentLeftSlide = 0;
-  currentRightSlide = 0;
-  leftInterval: any;
-  rightInterval: any;
-  isIntervalRunning: boolean = false; // Déclarez la variable ici
-
-  ngOnInit(): void {
-    console.log("GalleryComponent ngOnInit called");
-  
-    // Désactivez les intervalles pour tester si c'est la cause du problème
-    // Temporarily commenting out intervals to check if they are causing the issue
-    if (!this.isIntervalRunning) {
-      this.isIntervalRunning = true;
-  
-      console.log("Starting intervals...");
-  
-      // Changement des images gauche
-      // this.leftInterval = setInterval(() => {
-      //   this.currentLeftSlide = (this.currentLeftSlide + 1) % this.leftImages.length;
-      //   console.log("Current Left Slide:", this.currentLeftSlide);
-      // }, 5000);
-  
-      // Changement des images droite
-      // this.rightInterval = setInterval(() => {
-      //   this.currentRightSlide = (this.currentRightSlide + 1) % this.rightImages.length;
-      //   console.log("Current Right Slide:", this.currentRightSlide);
-      // }, 5500);
-    }
-  }
-  
-  ngOnDestroy(): void {
-    // Nettoyage des intervalles pour éviter les fuites mémoire
-    clearInterval(this.leftInterval);
-    clearInterval(this.rightInterval);
-  }
+ 
 
   rateProduct(product: any, rating: number): void {
     product.rating = rating;
