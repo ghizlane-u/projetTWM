@@ -6,6 +6,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AboutComponent } from './about/about.component';
 import { HotdrinksComponent } from './hotdrinks/hotdrinks.component';
 import { GlaceComponent } from './glace/glace.component';
+import { CakeComponent } from './cake/cake.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirige vers 'home' au chargement
@@ -15,5 +17,7 @@ export const routes: Routes = [
   { path: 'cold', component: ColddrinksComponent },
   { path: 'hot' , component: HotdrinksComponent},
   { path: 'glace', component: GlaceComponent },
+  { path: 'cake', component: CakeComponent },
+  
   { path: '**', redirectTo: 'home', pathMatch: 'full' } // Redirige les routes inconnues
 ];
