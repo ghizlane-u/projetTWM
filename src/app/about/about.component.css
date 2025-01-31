@@ -93,7 +93,7 @@ p {
 }
 
 .section-contact img:hover {
-  transform: scale(1.05) translateX(15px); /* Effet de zoom réduit */
+  transform: scale(1.05) translateX(30px); /* Effet de zoom réduit */
   filter: brightness(1.1); /* Augmenter légèrement la luminosité */
   margin-left: 30px; /* L'image se rapproche du texte */
 }
