@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ColddrinksComponent } from './colddrinks/colddrinks.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutComponent } from './about/about.component';
+import { PopupComponent } from './popup/popup.component';
 
 
 
@@ -21,5 +22,6 @@ export const routes: Routes = [
   { path: 'cold', component: ColddrinksComponent },
   { path: 'hot' , component: HotdrinksComponent},
   { path: 'glace', component: GlaceComponent },
+  { path: 'popup', component: PopupComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' } // Redirige les routes inconnues
 ];

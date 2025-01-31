@@ -147,21 +147,6 @@
     color: #be7c42;
     font-size: 1.2rem;
     text-decoration: none;
-<<<<<<< HEAD
-  }
-  
-  .contact-links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Media Queries pour les petits écrans */
-  @media (max-width: 768px) {
-    .contact-img {
-      width: 100%; /* L'image occupe 100% de la largeur sur les petits écrans */
-    }
-  }
-  
-=======
 }
 
 .contact-links a:hover {
@@ -192,4 +177,3 @@
         text-align: center;
     }
 }
->>>>>>> c71715bb9fe1638fcdf35a5936b80aa87b7e265b

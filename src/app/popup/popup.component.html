@@ -1,0 +1,11 @@
+<div class="popup-overlay" *ngIf="isVisible">
+    <div class="popup bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+      <h1 class="text-3xl font-semibold text-center text-green-600 mb-4">Envoi Réussi !</h1>
+      <p class="text-lg text-gray-700 text-center mb-6">Merci de nous avoir contacté. Nous avons bien reçu votre message et reviendrons vers vous sous peu.</p>
+      
+      <button (click)="closePopup()" class="bg-[#84592B] text-white py-2 px-6 rounded-lg hover:bg-[#6d4b23] transition-colors duration-200">
+        OK
+      </button>
+    </div>
+  </div>
+  
