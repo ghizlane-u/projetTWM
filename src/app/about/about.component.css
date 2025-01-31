@@ -1,0 +1,162 @@
+.about-container {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #26360c; /* Fond global de la page */
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #cc925e; /* Titre principal */
+  }
+  
+  .highlight {
+    color: #be7c42; /* Texte mis en avant */
+    font-weight: bold;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    background-color: #4d573e; /* Fond des sections (modifié) */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section img {
+    width: 40%; /* L'image occupe 40% de la largeur du conteneur */
+    height: 300px; /* Hauteur fixe de l'image */
+    object-fit: contain; /* L'image s'adapte sans être coupée */
+    border-radius: 10px;
+  }
+  
+  .section div {
+    width: 55%;
+    text-align: left;
+  
+   h2 {
+      color: #cc925e; /* Couleur des sous-titres */
+    }
+  
+    p {
+      line-height: 1.6;
+    }
+  
+    /* Couleurs de fond et texte pour chaque paragraphe */
+    &.section-history {
+      background-color: #4d573e; /* Fond des sections */
+      color: black;
+    }
+  
+    &.section-quality {
+      background-color: #26360c; /* Fond des sections */
+      color: white;
+    }
+  
+    &.section-products {
+      background-color: #4d573e; /* Fond des sections */
+      color: white;
+    }
+  
+    &.section-experts {
+      background-color: #be7c42; /* Fond des sections */
+      color: white;
+    }
+  
+    &.section-serenity {
+      background-color: #a5b884; /* Fond des sections */
+      color: black;
+    }
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  a {
+    color: #be7c42; /* Couleur des liens */
+    font-size: 1.2rem;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles pour les cartes de produits */
+  .product-card {
+    background-color: #cc925e;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Grid pour les produits */
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  /* Section Contact */
+.section-contact {
+    background-color: #4d573e;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .section-contact h2 {
+    color: #cc925e;
+    margin-bottom: 20px;
+  }
+  
+  .section-contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Image dans la section Contact */
+  .contact-img {
+    width: 80%; /* L'image occupe 80% de la largeur de la section */
+    max-width: 600px; /* Limite la largeur maximale de l'image */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Liens de réseaux sociaux */
+  .contact-links a {
+    margin: 10px;
+    color: #be7c42;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries pour les petits écrans */
+  @media (max-width: 768px) {
+    .contact-img {
+      width: 100%; /* L'image occupe 100% de la largeur sur les petits écrans */
+    }
+  }
+  

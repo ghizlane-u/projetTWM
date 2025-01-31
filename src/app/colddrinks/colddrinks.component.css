@@ -7,4 +7,20 @@ p {
   font-family: Playwrite inherit;
   margin: 10px 0;
   }
+  .rating {
+    font-size: 24px;
+    cursor: pointer;
+  }
   
+  .rating span {
+    color: #ccc; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition fluide */
+  }
+  
+  .rating span.filled {
+    color: yellow; /* Couleur lorsque l'étoile est remplie */
+  }
+  .rating span:hover {
+    color: gold; /* Couleur au survol */
+  }
+    
