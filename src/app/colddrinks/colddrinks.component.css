@@ -1,6 +1,32 @@
 p {
     color: #4d573e;
+    font-family: Playwrite inherit;
   }
+<<<<<<< HEAD
+  h3 {
+  font-size: 1.2em;
+  font-family: Playwrite inherit;
+  margin: 10px 0;
+  }
+  .rating {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .rating span {
+    color: #ccc; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition fluide */
+  }
+  
+  .rating span.filled {
+    color: yellow; /* Couleur lorsque l'étoile est remplie */
+  }
+  .rating span:hover {
+    color: gold; /* Couleur au survol */
+  }
+    
+=======
   img{
     border: 3px solid white;
 }
+>>>>>>> c71715bb9fe1638fcdf35a5936b80aa87b7e265b
