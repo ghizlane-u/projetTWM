@@ -1,76 +1,77 @@
 <section class="relative py-28 bg-gradient-to-r [#123026];">
-    <div class="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8 [#cc925e]">
-      <div class="max-w-lg space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">
-        <h3 class="text-[#ffa500] font-semibold">
-          Contact
-        </h3>
-        <p class="text-white text-3xl font-semibold sm:text-4xl">
-          Get in touch
-        </p>
-        <p class="text-[#ffa500]">
-          We’d love to hear from you! Please fill out the form below.
-        </p>
-      </div>
-      <div class="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 sm:rounded-xl [#cc925e]">
-        <form
-          onsubmit="event.preventDefault()"
-          class="space-y-5 "
-         >
-          <div>
-            <label class="font-medium text-[#84592B]">
-              Full name
-            </label>
-            <input
-              type="text"
-              required
-              class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-[#9D9167] shadow-sm rounded-lg"
-            />
-          </div>
-          <div>
-            <label class="font-medium text-[#84592B]">
-              Email
-            </label>
-            <input
-              type="email"
-              required
-              class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-[#9D9167] shadow-sm rounded-lg"
-            />
-          </div>
-          <div>
-            <label class="font-medium text-[#84592B]">
-              Phone number
-            </label>
-            <div class="relative mt-2">
-              <div class="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
-                <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                  <option>US</option>
-                  <option>ES</option>
-                  <option>MR</option>
-                </select>
-              </div>
-              <input
-                type="number"
-                placeholder="+1 (555) 000-000"
-                required
-                class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-[#9D9167] shadow-sm rounded-lg"
-              />
-            </div>
-          </div>
-          <div>
-            <label class="font-medium text-[#84592B]">
-              Message
-            </label>
-            <textarea required class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-[#9D9167] shadow-sm rounded-lg"></textarea>
-          </div>
-          <button
-            class="w-full px-4 py-2 text-white font-medium bg-[#9D9167] hover:bg-[#84592B] active:bg-[#84592B] rounded-lg duration-150"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+  <div class="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8 [#cc925e]">
+    <div class="max-w-lg space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">
+      <h3 class="text-[#ffa500] font-semibold">
+        Contact
+      </h3>
+      <p class="text-white text-3xl font-semibold sm:text-4xl">
+        Get in touch
+      </p>
+      <p class="text-[#ffa500]">
+        We’d love to hear from you! Please fill out the form below.
+      </p>
     </div>
-    <div class="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]" 
-         style="background: linear-gradient(106.89deg, rgba(157, 145, 103, 0.11) 15.73%, rgba(132, 89, 43, 0.41) 15.74%, rgba(157, 145, 103, 0.26) 56.49%, rgba(132, 89, 43, 0.4) 115.91%)"></div>
-  </section>
-  
+    <div class="mt-12 mx-auto px-4 p-8 bg-[4D573E] sm:max-w-lg sm:px-8 sm:rounded-xl">
+      <form onsubmit="event.preventDefault()" class="space-y-5">
+        <div>
+          <label class="font-medium text-[cc925e]">
+            Full name
+          </label>
+          <input
+            type="text"
+            required
+            class="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-[#9D9167] shadow-sm rounded-lg"
+          />
+        </div>
+        <div>
+          <label class="font-medium text-[cc925e]">
+            Email
+          </label>
+          <input
+            type="email"
+            required
+            class="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-[#9D9167] shadow-sm rounded-lg"
+          />
+        </div>
+        <div>
+          <label class="font-medium text-[cc925e]">
+            Phone number
+          </label>
+          <div class="relative mt-2">
+            <div class="absolute inset-y-0 text-white left-3 my-auto h-6 flex items-center border-r pr-2 [cc925e]">
+              <select class="text- [cc925e]">
+                <option>US</option>
+                <option>ES</option>
+                <option>MR</option>
+              </select>
+            </div>
+            <input
+              type="number"
+              placeholder="+1 (555) 000-000"
+              required
+              class="w-full pl-[4.5rem] pr-3 py-2  text-white appearance-none bg-transparent outline-none border focus:border-[#cc925e] shadow-sm rounded-lg"
+            />
+          </div>
+        </div>
+        <div>
+          <label class="font-medium text-[#cc925e]">
+            Message
+          </label>
+          <textarea required class="w-full mt-2 h-36 px-3 py-2 text-white resize-none appearance-none bg-transparent outline-none border focus:border-[#9D9167] shadow-sm rounded-lg"></textarea>
+        </div>
+        <button (click)="showSuccessPopup()"
+        class="w-full px-4 py-2 text-white font-medium bg-[#84592B] hover:bg-[#84592B] active:bg-[#84592B] rounded-lg duration-150">
+        Submit
+      </button>
+      <app-popup (close)="onPopupClose()"></app-popup>
+      
+      
+      
+      
+
+      </form>
+    </div>
+  </div>
+  <div class="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]" 
+       style="background: linear-gradient(106.89deg, rgba(157, 145, 103, 0.11) 15.73%, rgba(132, 89, 43, 0.41) 15.74%, rgba(157, 145, 103, 0.26) 56.49%, rgba(132, 89, 43, 0.4) 115.91%)"></div>
+</section>
