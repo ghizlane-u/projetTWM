@@ -7,18 +7,19 @@
         <h3 class="mt-4 text-sm text-[#26360c]">{{ product.name }}</h3>
         <p class="mt-1 text-lg font-medium text-gray-900">{{ product.price }} Dhs</p>
 
-        <div class="description">
-          <p class="text-sm text-[#26360c] text-center">{{ product.description }}</p>
-        </div>
-
-        <!-- Section des étoiles -->
-        <div class="rating flex">
+        <!-- Section des étoiles (placée ici) -->
+        <div class="rating flex mb-4">
           <span *ngFor="let star of stars; let starIndex = index"
                 [class.filled]="starIndex < product.rating"
                 (click)="rateProduct(product, starIndex + 1)"
                 class="cursor-pointer text-xl">
               ★
           </span>
+        </div>
+
+        <!-- Description (déplacée sous les étoiles) -->
+        <div class="description">
+          <p class="text-sm text-[#26360c] text-center">{{ product.description }}</p>
         </div>
       </div>
     </div>
