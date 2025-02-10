@@ -20,17 +20,9 @@ img {
   gap: 5px;
 }
 
-.rating span {
-  font-size: 1.8rem;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
-}
 
-.rating span:hover,
-.rating .filled {
-  color: #facc15; /* Jaune doré */
-}
+
+
 
 .group {
   position: relative;
@@ -63,14 +55,19 @@ img {
   border-radius: 5px;
 }
 
-.rating .rating flex {
+.rating span.filled {
   color: #facc15; /* Jaune doré */
 }
 
-.rating span.rating flex {
-  color: #facc15;
+.rating span {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
-.product-info {
-  padding-top: 20px;
+.rating span:hover,
+.rating .filled {
+  color: #facc15; /* Jaune doré */
 }
+
