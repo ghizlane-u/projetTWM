@@ -1,21 +1,38 @@
+
 p {
-    color: #4d573e;
-  }
-img{
-    border: 3px solid white;
+  color: #4d573e;
+  font-family: Playwrite inherit;
+}
+
+h3 {
+font-size: 1.2em;
+font-family: Playwrite inherit;
+margin: 10px 0;
 }
 .rating {
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-  }
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+
+.rating span {
+  color: #ccc; /* Couleur par défaut */
+  transition: color 0.3s ease; /* Transition fluide */
+  font-size: 1.8rem;
+}
+
+.rating span.filled {
+  color: #facc15; /* Couleur lorsque l'étoile est remplie */
+}
+.rating span:hover {
+  color: #facc15; /* Couleur au survol */
+}
   
-  .rating span {
-    font-size: 1.5em;
-    color: #ccc;
-    cursor: pointer;
-  }
-  
-  .rating .filled {
-    color: #ffa500; /* Couleur des étoiles sélectionnées */
-  }
+
+img{
+  border: 3px solid white;
+  border-radius: 10px;
+}

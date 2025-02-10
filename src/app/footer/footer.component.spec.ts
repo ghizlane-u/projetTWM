@@ -1,6 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
@@ -14,21 +12,6 @@ describe('FooterComponent', () => {
     .compileComponents();
 
     fixture = TestBed.createComponent(FooterComponent);
-
-
-
-describe('GlaceComponent', () => {
-  let component: GlaceComponent;
-  let fixture: ComponentFixture<GlaceComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [GlaceComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(GlaceComponent);
-
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

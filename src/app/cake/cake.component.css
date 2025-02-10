@@ -1,5 +1,13 @@
 p {
   color: #4d573e;
+  font-family: Playwrite inherit;
+  font-size: 1.2em;  /* Même taille que dans le premier code */
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: Playwrite inherit; /* Application de la même police */
+  margin: 10px 0; /* Espacement uniforme autour du titre */
 }
 
 img {
