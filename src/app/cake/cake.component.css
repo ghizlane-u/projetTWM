@@ -25,7 +25,7 @@ img{
   
   .description {
     position: absolute;
-    bottom: 0;
+    top: 0; /* Affiche en haut */
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -35,15 +35,15 @@ img{
     text-align: center;
     opacity: 0; /* Caché par défaut */
     transition: opacity 0.3s ease-in-out;
-  }
+}
   
   .group:hover .description {
     opacity: 1; /* Affiche la description au survol */
   }
   
-  .group:hover .description p {
+  /* .group:hover .description p {
     background-color: #f5e1c0; /* Applique l'arrière-plan crème uniquement au texte de la description */
-    padding: 5px;
+    /* padding: 5px;
     border-radius: 5px;
-  }
-  
+  } */
+   
