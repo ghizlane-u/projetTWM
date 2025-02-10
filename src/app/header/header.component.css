@@ -61,33 +61,7 @@ nav {
     width: 200px; /* Largeur au survol */
     background-color: rgb(161, 85, 18); /* Changement de couleur au focus */
 }
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-}
 
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    background-color: #cc925e;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-  }}
 
-  .menu a {
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
+  
+  
