@@ -86,9 +86,9 @@
     </nav>
 </header> -->
 <nav class="fixed w-full bg-amber-900 z-50">
-  <div class="flex items-center">
-      <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Logo">
-    </div>
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo" class="logo-img" />
+  </div>
   <div class="max-w-7xl mx-auto px-4">
       
       <div class="flex justify-center items-center h-16 space-x-8">
@@ -103,11 +103,12 @@
                 <a routerLink="/hot" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Hot Drinks</a>
               </li>
               <li>
-                <a routerLink="/cake" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Pastry</a>
-              </li>
-              <li>
                 <a routerLink="/cold" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Cold Drinks</a>
               </li>
+              <li>
+                <a routerLink="/cake" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Pastry</a>
+              </li>
+              
               <li>
                 <a routerLink="/glace" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Glaces</a>
               </li>
@@ -118,9 +119,5 @@
           
       </div>
   </div>
-  <div class="search">
-      <input type="search" 
-             placeholder="Search Site..."
-             class="search-input px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 bg-white/80 backdrop-blur-sm transition-all duration-300 ease-in-out">
-  </div>
+  
 </nav>

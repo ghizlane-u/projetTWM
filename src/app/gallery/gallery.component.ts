@@ -52,10 +52,10 @@ export class GalleryComponent  {
       rating: 0
     },
     {
-      name: 'Spiced Chai Tea',
-      price: '46 DH',
-      image: '6.jpeg',
-      description: 'Lait tout juste chauffé avec des épices délicieuses. Recouvert d’une mousse de lait pour une texture crémeuse et de la cannelle pour une saveur épicée et chaleureuse.',
+      name: 'knafeh Pistachio Cone-Tastic',
+      price: '45 DH',
+      image: 'g1.jpg',
+      description: 'Un cornet unique avec une garniture spéciale de pistache et kunafa, servi avec une glace à la vanille, une sauce à la pistache, et de la pistache en poudre',
       showDescription: false,
       rating: 0
     },
@@ -68,10 +68,10 @@ export class GalleryComponent  {
       rating: 0
     },
     {
-      name: 'The Caprese Sandwich',
-      price: '45 DH',
-      image: '8.jpeg',
-      description: 'Baguette au pesto garnie de tranches de mozzarella, de rondelles de tomate, de la roquette, et une sauce beurre à l’ail',
+      name: 'Blueberry Cheesecake',
+      price: '47 DH',
+      image: 'g21.jpg',
+      description:'Un soft serve avec une base de biscuit belge et un nappage à la fraise, servi avec des miettes de Biscoff',
       showDescription: false,
       rating: 0
     }

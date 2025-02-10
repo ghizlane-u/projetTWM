@@ -6,6 +6,11 @@ nav {
     justify-content: space-evenly;
     align-items: center;
   }
+  .logo-img {
+    width: 120px;
+    height: 60px;
+    object-fit: contain;
+  }
   
   nav a {
     position: relative;

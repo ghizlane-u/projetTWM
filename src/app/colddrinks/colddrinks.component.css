@@ -11,21 +11,28 @@ p {
   .rating {
     font-size: 24px;
     cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
   }
+  
+  
   
   .rating span {
     color: #ccc; /* Couleur par défaut */
     transition: color 0.3s ease; /* Transition fluide */
+    font-size: 1.8rem;
   }
   
   .rating span.filled {
-    color: yellow; /* Couleur lorsque l'étoile est remplie */
+    color: #facc15; /* Couleur lorsque l'étoile est remplie */
   }
   .rating span:hover {
-    color: gold; /* Couleur au survol */
+    color: #facc15; /* Couleur au survol */
   }
     
 
   img{
     border: 3px solid white;
+    border-radius: 10px;
   }

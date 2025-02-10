@@ -8,13 +8,13 @@ import { CommonModule } from '@angular/common'; // Importer CommonModule
 import { HeaderComponent } from './header/header.component';
 import { HotdrinksComponent} from './hotdrinks/hotdrinks.component';
 import { CakeComponent } from './cake/cake.component';
-
+import {FooterComponent} from './footer/footer.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,  // Marquez ce composant comme autonome
-  imports: [RouterOutlet, RouterLink, HeaderComponent, GalleryComponent,CommonModule,HotdrinksComponent,ColddrinksComponent,CakeComponent]
+  imports: [RouterOutlet, RouterLink, HeaderComponent, GalleryComponent,CommonModule,HotdrinksComponent,ColddrinksComponent,CakeComponent,ContactComponent,FooterComponent]
 })
 export class AppComponent {
   title = 'angular-app';
