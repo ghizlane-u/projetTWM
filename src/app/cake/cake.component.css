@@ -1,5 +1,13 @@
 p {
   color: #4d573e;
+  font-family: Playwrite inherit;
+  font-size: 1.2em;  /* Même taille que dans le premier code */
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: Playwrite inherit; /* Application de la même police */
+  margin: 10px 0; /* Espacement uniforme autour du titre */
 }
 
 img {
@@ -12,17 +20,9 @@ img {
   gap: 5px;
 }
 
-.rating span {
-  font-size: 1.8rem;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
-}
 
-.rating span:hover,
-.rating .filled {
-  color: #facc15; /* Jaune doré */
-}
+
+
 
 .group {
   position: relative;
@@ -55,14 +55,18 @@ img {
   border-radius: 5px;
 }
 
-.rating .rating flex {
+.rating span.filled {
   color: #facc15; /* Jaune doré */
 }
 
-.rating span.rating flex {
-  color: #facc15;
+.rating span {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
-.product-info {
-  padding-top: 20px;
+.rating span:hover,
+.rating .filled {
+  color: #facc15; /* Jaune doré */
 }
