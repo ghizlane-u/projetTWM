@@ -143,3 +143,9 @@ p {
       text-align: center;
   }
 }
+
+.clickable {
+  cursor: pointer;
+  text-decoration: underline;
+}
+

@@ -136,3 +136,4 @@ export class CakeComponent {
     product.rating = rating;
   }
 }
+
