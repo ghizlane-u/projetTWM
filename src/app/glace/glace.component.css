@@ -1,49 +1,68 @@
 p {
-    color: #4d573e;
-  }
-img{
-    border: 3px solid white;
+  color: #4d573e;
 }
+
+img {
+  border: 3px solid white;
+}
+
 .rating {
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-  }
-  
-  .rating span {
-    font-size: 1.5em;
-    color: #ccc;
-    cursor: pointer;
-  }
-  
-  .rating .filled {
-    color: #ffa500; /* Couleur des étoiles sélectionnées */
-  }
-  .group {
-    position: relative;
-  }
-  
-  .description {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background: #f5e1c0; /* Crème/caramel clair */
-    padding: 8px;
-    border-radius: 8px;
-    text-align: center;
-    opacity: 0; /* Caché par défaut */
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .group:hover .description {
-    opacity: 1; /* Affiche la description au survol */
-  }
-  
-  .group:hover .description p {
-    background-color: #f5e1c0; /* Applique l'arrière-plan crème uniquement au texte de la description */
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.rating span {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.rating span:hover,
+.rating .filled {
+  color: #facc15; /* Jaune doré */
+}
+
+.group {
+  position: relative;
+  overflow: hidden; /* Empêche le débordement */
+}
+
+.product-info {
+  margin-top: 16px; /* Décale les informations du produit sous l'image */
+}
+
+.description {
+  position: relative; /* On retire la position absolue ici */
+  width: 100%;
+  background: #f5e1c0;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 10px; /* Décalage de la description sous l'image */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.group:hover .description {
+  opacity: 1;
+}
+
+.group:hover .description p {
+  background-color: #f5e1c0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rating .filled {
+  color: #facc15; /* Jaune doré */
+}
+
+.rating span.filled {
+  color: #facc15;
+}
+
+.product-info {
+  padding-top: 20px;
+}
