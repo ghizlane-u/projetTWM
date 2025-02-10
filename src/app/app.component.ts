@@ -15,7 +15,7 @@ import { FooterComponent } from './footer/footer.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,  // Marquez ce composant comme autonome
-  imports: [RouterOutlet, FooterComponent,RouterLink, HeaderComponent, GalleryComponent,CommonModule,HotdrinksComponent,ColddrinksComponent,CakeComponent]
+  imports: [RouterOutlet, FooterComponent,RouterLink, HeaderComponent, GalleryComponent,CommonModule,HotdrinksComponent,ColddrinksComponent, CakeComponent]
 })
 export class AppComponent {
   title = 'angular-app';
