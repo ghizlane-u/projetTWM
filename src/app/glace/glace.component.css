@@ -1,27 +1,42 @@
 p {
   color: #4d573e;
+  font-family: Playwrite inherit;
+  font-size: 1.2em;  /* Même taille que dans le premier code */
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: Playwrite inherit; /* Application de la même police */
+  margin: 10px 0; /* Espacement uniforme autour du titre */
 }
 
 img {
   border: 3px solid white;
+  border-radius: 10px;
+  width: 100%;  /* Largeur d'image pleine */
+  max-width: 300px;  /* Limite à 300px de large max */
 }
 
 .rating {
+  font-size: 24px;  /* Taille identique au premier code */
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
   gap: 5px;
 }
 
 .rating span {
-  font-size: 1.8rem;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  color: #ccc; /* Couleur par défaut */
+  transition: color 0.3s ease; /* Transition fluide */
+  font-size: 1.8rem;  /* Taille de texte identique */
 }
 
-.rating span:hover,
-.rating .filled {
-  color: #facc15; /* Jaune doré */
+.rating span.filled {
+  color: #facc15; /* Couleur dorée lorsque l'étoile est remplie */
+}
+
+.rating span:hover {
+  color: #facc15; /* Couleur dorée au survol */
 }
 
 .group {
@@ -30,23 +45,25 @@ img {
 }
 
 .product-info {
-  margin-top: 16px; /* Décale les informations du produit sous l'image */
+  margin-top: 16px; /* Espacement uniforme entre l'image et les informations */
+  font-size: 1rem;  /* Taille de texte identique */
 }
 
 .description {
-  position: relative; /* On retire la position absolue ici */
+  position: relative;
   width: 100%;
   background: #f5e1c0;
   padding: 8px;
   border-radius: 8px;
   text-align: center;
-  margin-top: 10px; /* Décalage de la description sous l'image */
+  margin-top: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  font-size: 1rem;  /* Taille de texte uniforme avec le premier code */
 }
 
 .group:hover .description {
-  opacity: 1;
+  opacity: 1; /* Opacité activée au survol */
 }
 
 .group:hover .description p {
@@ -55,14 +72,31 @@ img {
   border-radius: 5px;
 }
 
-.rating .filled {
-  color: #facc15; /* Jaune doré */
+/* Uniformisation des boutons */
+button {
+  background-color: #4d573e;
+  color: white;
+  font-family: Playwrite inherit;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.rating span.filled {
+button:hover {
+  background-color: #3a4530;
+}
+
+/* Uniformisation des liens */
+a {
+  color: #4d573e;
+  text-decoration: none;
+  font-family: Playwrite inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
   color: #facc15;
-}
-
-.product-info {
-  padding-top: 20px;
 }
