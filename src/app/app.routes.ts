@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { HotdrinksComponent } from './hotdrinks/hotdrinks.component';
 import { GlaceComponent } from './glace/glace.component';
 import { CakeComponent } from './cake/cake.component';
+import { MapComponent } from './map/map.component';
 
 
 export const routes: Routes = [
@@ -18,6 +19,7 @@ export const routes: Routes = [
   { path: 'hot' , component: HotdrinksComponent},
   { path: 'glace', component: GlaceComponent },
   { path: 'cake', component: CakeComponent },
+  { path: 'map', component: MapComponent },
   
   { path: '**', redirectTo: 'home', pathMatch: 'full' } // Redirige les routes inconnues
 ];
