@@ -1,13 +1,14 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css'],
   standalone: true ,
-  imports: [CommonModule] 
+  imports: [CommonModule]
+  
 })
-export class GalleryComponent  {
+export class GalleryComponent{
   stars = [1, 2, 3, 4, 5]; // Définir les étoiles (1 à 5)
   products = [
     {
@@ -94,7 +95,17 @@ export class GalleryComponent  {
   rateProduct(product: any, rating: number): void {
     product.rating = rating;
   }
-
+  
 
 }
+ 
+
+
+
+
+  
+
+
+
+
 
